@@ -12,57 +12,48 @@ Projeto de Responsive Web Design - Tribute Page
 |     Config Gerais     |
 \* ******** X ******** */
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
-	background-color: black;
+	background-color: rgb(17, 17, 17);
 	color: white;
-	justify-items: center;
-	align-items: center;
-	font-family: 'Architects Daughter', cursive;
 }
 
-h1, h2, h3  {
-	font-family: 'Tenali Ramakrishna', sans-serif;
-	font-size: 30px;
+h1, h2, h3, h4  {
+	font-family: 'Ubuntu', sans-serif;
 }
 
-
-
-/* ******** X ******** *\
-|        NAV BAR        |
-\* ******** X ******** */
-
-ul, a  {
-	list-style: none;
-    display: flex;
-    text-decoration: none;
-    color: whitesmoke;
+p {
+	font-family: 'Nunito', sans-serif;
 }
 
-ul, a:hover {
-    color: rgb(24, 192, 94);
-    animation: popup 1s;
-}
-
-li {
-    font-size: 20px;
-	margin: 10px;
-	padding: 5px;
-}
-
-.header {
+#main {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
 	align-items: center;
-	padding-left: 10px;
-	height: 9vh;
+	margin-top: 30px;
 }
 
+#title {
+	font-size: 35px;
+	margin-bottom: 20px;
+}
 
 
 /* ******** X ******** *\
 |         HOME          |
 \* ******** X ******** */
 
+#home {
+	text-align: center;
+	
+	width: 1000px;
+	height: auto;
+
+}
 .box {
 	/*box-shadow: 1px 1px 15px black, 0 0 25px blue, 0 0 15px darkblue;*/
 	background-color: #c4f8cb1f;
@@ -74,24 +65,17 @@ li {
 }
 
 img {
+	width: 1000px;
 	border-radius: 5px;
-	box-shadow: 1px 1px 15px black, 0 0 25px blue, 0 0 15px darkblue;
 	animation: welcome 3s 250ms;
 	animation-fill-mode: backwards;
 }
-.container {
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    text-align: center;
-	border: solid black;
-}
 
-.container img {
-    width: 800px;
-    height: 500px;
-
+#img-capiton {
+	background-color: rgba(2, 2, 2, 0.377);
+	animation: welcome 3s 250ms;
+	animation-fill-mode: backwards;
+	padding: 3px 0px;
 }
 
 
@@ -100,17 +84,67 @@ img {
 \* ******** X ******** */
 
 #tribute-info {
-    text-align: center;
+	text-align: center;
+	width: 1000px;
+	height: auto;
+	margin-top: 30px;
+
 }
 
 .box-about {
 	/*box-shadow: 1px 1px 15px black, 0 0 25px blue, 0 0 15px darkblue;*/
 	background-color: #c4f8cb1f;
-	margin: 50px;
+	margin: 10px;
 	padding: 10px;
 	border-radius: 5px;
 	animation: welcome 3s 500ms;
-    animation-fill-mode: backwards;
+	animation-fill-mode: backwards;
+}
+
+.box-about p {
+	margin: 10px;
+}
+
+#epitetos {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+#imgEpitetos {
+	width: 300px;
+	height: 500px;
+}
+
+#epitetos ul {
+	list-style: none;
+}
+
+.boxEpitetos {
+	background-color: #c4f8cb1f;
+	margin: 10px;
+	padding: 25px;
+	border-radius: 5px;
+	animation: welcome 3s 500ms;
+	animation-fill-mode: backwards;
+	
+}
+
+.epiteto {
+	margin-top: 10px;
+}
+
+.boxLink {
+	background-color: #c4f8cb1f;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 5px;
+	animation: welcome 3s 500ms;
+	animation-fill-mode: backwards;
+}
+
+.links a {
+	color: white;
 }
 
 
