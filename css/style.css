@@ -1,0 +1,143 @@
+/* CSS CRIADO E DESENVOLVIDO DO ZERO A BASE DE CAFÉ E MUITAS NOITES SEM DORMI.
+
+A REGRA É CLARA: COPIA, SÓ NÃO FAZ IGUAL ;)
+
+Autor: Hiago Patrick 
+github: hiagoptk.github.io
+
+10/06/2020
+Projeto de Responsive Web Design - Tribute Page
+
+/* ******** X ******** *\
+|     Config Gerais     |
+\* ******** X ******** */
+
+body {
+	background-color: black;
+	color: white;
+	justify-items: center;
+	align-items: center;
+	font-family: 'Architects Daughter', cursive;
+}
+
+h1, h2, h3  {
+	font-family: 'Tenali Ramakrishna', sans-serif;
+	font-size: 30px;
+}
+
+
+
+/* ******** X ******** *\
+|        NAV BAR        |
+\* ******** X ******** */
+
+ul, a  {
+	list-style: none;
+    display: flex;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+ul, a:hover {
+    color: rgb(24, 192, 94);
+    animation: popup 1s;
+}
+
+li {
+    font-size: 20px;
+	margin: 10px;
+	padding: 5px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 10px;
+	height: 9vh;
+}
+
+
+
+/* ******** X ******** *\
+|         HOME          |
+\* ******** X ******** */
+
+.box {
+	/*box-shadow: 1px 1px 15px black, 0 0 25px blue, 0 0 15px darkblue;*/
+	background-color: #c4f8cb1f;
+	margin: 50px;
+	padding: 10px;
+	border-radius: 5px;
+	animation: welcome 3s 500ms;
+	animation-fill-mode: backwards;
+}
+
+img {
+	border-radius: 5px;
+	box-shadow: 1px 1px 15px black, 0 0 25px blue, 0 0 15px darkblue;
+	animation: welcome 3s 250ms;
+	animation-fill-mode: backwards;
+}
+.container {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    text-align: center;
+	border: solid black;
+}
+
+.container img {
+    width: 800px;
+    height: 500px;
+
+}
+
+
+/* ******** X ******** *\
+|      ABOUT PAGE       |
+\* ******** X ******** */
+
+#tribute-info {
+    text-align: center;
+}
+
+.box-about {
+	/*box-shadow: 1px 1px 15px black, 0 0 25px blue, 0 0 15px darkblue;*/
+	background-color: #c4f8cb1f;
+	margin: 50px;
+	padding: 10px;
+	border-radius: 5px;
+	animation: welcome 3s 500ms;
+    animation-fill-mode: backwards;
+}
+
+
+/* ******** X ******** *\
+|       ANIMAÇÕES       |
+\* ******** X ******** */
+
+@keyframes welcome {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes popup {
+    from {
+        transform: scale(0.8);
+    } to {
+        transform: scale(1);
+    }
+}
+
+/* ******** X ******** *\
+     RESPONSIVIDADE     |
+\* ******** X ******** */
+
