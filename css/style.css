@@ -20,6 +20,10 @@ Projeto de Responsive Web Design - Tribute Page
 body {
 	background-color: rgb(17, 17, 17);
 	color: white;
+	border: solid red;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 h1, h2, h3, h4  {
@@ -35,6 +39,8 @@ p {
 	flex-direction: column;
 	align-items: center;
 	margin-top: 30px;
+	width: 90vw;
+	height: auto;
 }
 
 #title {
@@ -42,7 +48,10 @@ p {
 	margin-bottom: 20px;
 }
 
-
+#image {
+  max-width: 100%;
+  height: auto;
+}
 /* ******** X ******** *\
 |         HOME          |
 \* ******** X ******** */
@@ -50,22 +59,28 @@ p {
 #home {
 	text-align: center;
 	
-	width: 1000px;
+	width: 80vw;
 	height: auto;
 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	
+	padding: 20px;
 }
-.box {
-	/*box-shadow: 1px 1px 15px black, 0 0 25px blue, 0 0 15px darkblue;*/
-	background-color: #c4f8cb1f;
-	margin: 50px;
-	padding: 10px;
-	border-radius: 5px;
-	animation: welcome 3s 500ms;
-	animation-fill-mode: backwards;
+
+
+#img-div {
+	margin: 20px;
+	width: 100%;
+	height: auto;
+	
 }
 
 img {
-	width: 1000px;
+	max-width: 100%;
+	height: auto;
 	border-radius: 5px;
 	animation: welcome 3s 250ms;
 	animation-fill-mode: backwards;
@@ -85,14 +100,27 @@ img {
 
 #tribute-info {
 	text-align: center;
-	width: 1000px;
+	width: 80vw;
 	height: auto;
 	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
 
+	padding: 20px;
+}
+
+.about {
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 30px;
 }
 
 .box-about {
-	/*box-shadow: 1px 1px 15px black, 0 0 25px blue, 0 0 15px darkblue;*/
 	background-color: #c4f8cb1f;
 	margin: 10px;
 	padding: 10px;
@@ -105,10 +133,19 @@ img {
 	margin: 10px;
 }
 
+
 #epitetos {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
+	width: 100%;
+	
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.boxImg {
+	padding: 10px;
 }
 
 #imgEpitetos {
@@ -134,6 +171,14 @@ img {
 	margin-top: 10px;
 }
 
+ /*     TRIBUTE LINK     */
+
+#tribute-link {
+	
+	width: 100%;
+	margin-bottom: 30px;
+}
+
 .boxLink {
 	background-color: #c4f8cb1f;
 	margin: 10px;
@@ -141,10 +186,24 @@ img {
 	border-radius: 5px;
 	animation: welcome 3s 500ms;
 	animation-fill-mode: backwards;
+	
 }
 
 .links a {
 	color: white;
+}
+
+#footer {
+	border: solid lightseagreen;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.footerTxt{
+	border: solid palevioletred;
 }
 
 
@@ -175,3 +234,32 @@ img {
      RESPONSIVIDADE     |
 \* ******** X ******** */
 
+
+@media (max-width: 780px) {
+	#main {
+		width: 90vw;
+		height: auto;
+	}
+
+	#home {
+		width: 80%;
+		height: auto;
+	}
+
+	#tribute-info {
+		width: 80%;
+		height: auto;
+	}
+
+	#footer {
+		width: 100%;
+		height: auto;
+		text-align: center;
+		font-size: 12px;
+	}
+
+	#epitetos {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+}
